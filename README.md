@@ -1,1 +1,2 @@
-# okuldenemelericpp
+# ALGORİTMA ÖĞRENİMİ İÇİN TUTTUĞUM NOTLAR
+
