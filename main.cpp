@@ -103,6 +103,194 @@ int main(){
 }
 */
 
+/*
+İLK ÖRNEK
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"0-100 arası bir sayı giriniz";
+    int sayi1;
+    cin>> sayi1;
+    
+    if (sayi1<50){
+        cout<<"Sayınız küçük";
+    }
+    else if(sayi1>50){
+        cout<<"sayınız büyük";
+    }
+    else{
+        cout<<"Sayınız eşit";
+    }
+}
+
+2. ÖRNEK 
+
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<" 0-100 arası bir sayı giriniz ";
+    int sayi1;
+    cin>> sayi1;
+    
+    if (sayi1<50){
+        cout<<"Sayınız küçük";
+    }
+    else if(sayi1>50){
+        cout<<"sayınız büyük";
+    }
+    else{
+        cout<<"Sayınız eşit";
+    }
+}
+
+3. ÖRNEK 
+
+#include <iostream>
+using namespace std;
+int main(){
+    //ehliyet için 18 yaşını doldurmuş olmak zorunda
+    int yas;
+    cin>>yas;
+    if(yas>=18){
+        cout<<"Giriş Başarılı gelebilirsin ";
+    }
+    else {
+        cout<< "sınava giremezsin ";
+    }
+    
+}
+
+4. ÖRNEK
+
+#include <iostream>
+using namespace std;
+int main(){
+    int puan;
+    cout<<"Lütfen puan giriniz ";
+    cin>>puan;
+    if(puan<50){
+        cout<<"FF";
+    }
+    else if(puan<60){
+        cout<<"DD";
+    }
+    else if(puan<70){
+        cout<<"CC";
+    }
+    else if(puan<80){
+        cout<<"BB";
+    }
+    else if(puan<101){
+        cout<<"AA";
+    }
+}    
+    
+5. ÖRNEK
+#include <iostream>
+using namespace std;
+
+int main() {
+    string kullanicAdi = "mehmet";
+    string giris;
+    
+    cout << "Kullanıcı adınızı girin: ";
+    cin >> giris;
+    
+    if (giris == kullanicAdi) {
+        cout << "Hoş geldin mehmet" << endl;
+    } else {
+        cout << "mehmet nerede???" << endl;
+    }
+    
+    return 0;
+}
+
+
+6. ÖRNEK 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string mezun;
+    int yas;
+    
+    cout << "Mezuniyet durumunuzu girin (lise/üniversite): ";
+    cin >> mezun;
+    cout << "Yaşınızı girin: ";
+    cin >> yas;
+    
+    if (mezun == "lise" && yas >= 18) {
+        cout << "Sınava giriş yapabilirsin" << endl;
+    } else if (mezun == "lise" || mezun == "üniversite") {
+        cout << "Sınava giriş yapabilirsin" << endl;
+    } else {
+        cout << "Giriş yapamazsın" << endl;
+    }
+    
+    return 0;
+}
+
+
+7. ÖRNEK
+
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string correctUsername = "DOGU"; // Doğru kullanıcı adı
+    std::string correctPassword = "1234";      // Doğru şifre
+
+    std::string username;
+    std::string password;
+
+    std::cout << "Kullanici adinizi girin: ";
+    std::cin >> username;
+
+    std::cout << "Sifrenizi girin: ";
+    std::cin >> password;
+
+    // Kullanıcı adı ve şifre kontrolü
+    if (username == correctUsername && password == correctPassword) {
+        std::cout << "Giris basarili! Hoş geldiniz!" << std::endl;
+    } else {
+        std::cout << "Giris basarisiz! Kullanici adi veya sifre yanlis." << std::endl;
+    }
+
+    return 0;
+}
+
+8. örnek
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bakiye = 1000;
+    int secim;
+
+    cout << "Merhaba Hosgeldiniz, Bakiyeniz: " << bakiye << endl;
+    cout << "Ana yemek için 1'e basin" << endl;
+    cout << "Tatli için 2'ye basin" << endl;
+    cout << "Icecek için 3'e basin" << endl;
+    cin >> secim;
+
+    if (secim == 1) {
+        bakiye -= 200;
+        cout << "Ana yemek sectiniz Kalan bakiye: " << bakiye << endl;
+    } else if (secim == 2) {
+        bakiye -= 100;
+        cout << "Tatli sectiniz Kalan bakiye: " << bakiye << endl;
+    } else if (secim == 3) {
+        bakiye -= 50;
+        cout << "Icecek sectiniz Kalan bakiye: " << bakiye << endl;
+    } else {
+        cout << "Hatali secim yaptiniz 1-2-3 basin" << endl;
+    }
+
+    return 0;
+}
+*/
 
 
 
