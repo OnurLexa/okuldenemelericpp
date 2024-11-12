@@ -292,5 +292,90 @@ int main() {
 }
 */
 
+/* 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int karakterSec;
+    int saglik;
+    int saldiri;
+    int haritaSec;
+    int canavarSaglik;
+    int canavarSaldiri;
+    char oyunDevam = 'E';
+    
+    cout << "Oyun evrenine hoş geldiniz, lütfen bir karakter seçiniz"<< endl ;
+    cout << "1.Savaşçı, 2.Okçu, 3.Büyücü";
+    cin >> karakterSec;
+    
+    switch(karakterSec) {
+    
+        case 1:
+        saglik = 100;
+        saldiri = 20;
+        cout << "Savaşçı (100 sağlık, 20 saldırı)";
+        break;
+        case 2:
+        saglik = 80;
+        saldiri = 25;
+        cout << "Okçu (80 sağlık, 25 saldırı)";
+        break;
+        case 3:
+        saglik = 70;
+        saldiri = 30;
+        cout << "Büyücü(70 sağlık, 30 saldırı)";
+        break;
+        default:
+        cout << "Geçersiz seçim";
+        return 0;
+    }
+    
+    while (oyunDevam == 'E' || oyunDevam == 'e') {
+        cout << "1. Orman (Kurt - 50 sağlık, 15 saldırı" << endl;
+        cout << "Bir harita seçin (1): ";
+        cin >> haritaSec;
+        
+        switch (haritaSec) {
+            case 1:
+            canavarSaglik = 50;
+            canavarSaldiri = 15;
+            cout << "Ormana girdin. (Kurt - 50 sağlık, 15 saldırı)" << endl;
+            break;
+            default:
+            cout << "Geçersiz harita seçimi";
+            continue;
+        }
+        
+        cout << "Savaş başlıyor"; 
+        while (saglik > 0 && canavarSaglik > 0){
+            canavarSaldiri -= saldiri;
+            cout << "karakter saldırısı. Canavara " << saldiri << "hasar verdiniz. Canavarın kalan sağlığı: " << canavarSaglik << endl;
+            if (canavarSaglik <= 0) {
+                cout << "Canavarı yendin!";
+                break;
+            }
+            
+            saglik -= canavarSaglik;
+            cout << "canavar saldırısı, karakterin kalan sağlığı" << saglik << endl;
+            if (saglik <= 0) {
+                cout << "öldünüz oyun bitti";
+                break;
+            }
+        }
+        
+        cout << "oyuna devam etmek ister misiniz? (E/e - Evet. H/h - Hayır): ";
+        cin >> oyunDevam;
+        if (oyunDevam == 'H' || oyunDevam == 'h') {
+            cout << "oyun bitti. hoşça kal";
+            break;
+        }
+    }
+    
+    return 0;
+}
+*/
+
 
 
